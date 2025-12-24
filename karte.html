@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ea35c2411029c5e570c251f702ca4150 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ea35c2411029c5e570c251f702ca4150" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ea35c2411029c5e570c251f702ca4150 = L.map(
+                "map_ea35c2411029c5e570c251f702ca4150",
+                {
+                    center: [46.68, 7.52],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_54da70b7db313dfedb6fea269182c4c7 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_54da70b7db313dfedb6fea269182c4c7.addTo(map_ea35c2411029c5e570c251f702ca4150);
+        
+    
+            var poly_line_2309d582970b25e9357889fa347db24e = L.polyline(
+                [[46.68046933364051, 7.51466288581231], [46.68552315092888, 7.518924215042471], [46.6874411939835, 7.523339785693762], [46.69343427686786, 7.537718336669897]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_ea35c2411029c5e570c251f702ca4150);
+        
+    
+            poly_line_2309d582970b25e9357889fa347db24e.bindTooltip(
+                `<div>
+                     Gondelbahn Stockeflue - Oberstockensee - Stockhorn
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f74782a0ff98f7eb71dd2bfea20183cc = L.circleMarker(
+                [46.68046933364051, 7.51466288581231],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ea35c2411029c5e570c251f702ca4150);
+        
+    
+            var circle_marker_fccd02de9b999a713b25d88e1352bb75 = L.circleMarker(
+                [46.68552315092888, 7.518924215042471],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ea35c2411029c5e570c251f702ca4150);
+        
+    
+            var circle_marker_22764523e2cf8907e49a284ec3e131a5 = L.circleMarker(
+                [46.6874411939835, 7.523339785693762],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ea35c2411029c5e570c251f702ca4150);
+        
+    
+            var circle_marker_025b41dbacbfa6f5a39eaa3fe8cc3627 = L.circleMarker(
+                [46.69343427686786, 7.537718336669897],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ea35c2411029c5e570c251f702ca4150);
+        
+    
+            var poly_line_7f69ca1e9fa96136a32ab9663d2f6ad7 = L.polyline(
+                [[46.68546651225031, 7.51901458004535], [46.68448208850834, 7.528332862488661]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_ea35c2411029c5e570c251f702ca4150);
+        
+    
+            poly_line_7f69ca1e9fa96136a32ab9663d2f6ad7.bindTooltip(
+                `<div>
+                     Sesselbahn Oberstockensee - Cheibehore
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6bf7ad0498111e9843e2810d5c9fb430 = L.circleMarker(
+                [46.68546651225031, 7.51901458004535],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ea35c2411029c5e570c251f702ca4150);
+        
+    
+            var circle_marker_3db202608de7ab539f93b66f1f9db5c1 = L.circleMarker(
+                [46.68448208850834, 7.528332862488661],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ea35c2411029c5e570c251f702ca4150);
+        
+    
+            var poly_line_bb6345d2850aee3a454b8b686e4231ce = L.polyline(
+                [[46.71712535390066, 7.552957631711443], [46.700721624053706, 7.542332912655545], [46.69306073253944, 7.533848508769114]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_ea35c2411029c5e570c251f702ca4150);
+        
+    
+            poly_line_bb6345d2850aee3a454b8b686e4231ce.bindTooltip(
+                `<div>
+                     3S-Bahn Oberstocken - Bachalp - Strüssligrat
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ab88c5cb272407d20481f5d65adb999f = L.circleMarker(
+                [46.71712535390066, 7.552957631711443],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ea35c2411029c5e570c251f702ca4150);
+        
+    
+            var circle_marker_bce660ea58787c4af9c0ef7cb1e02849 = L.circleMarker(
+                [46.700721624053706, 7.542332912655545],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ea35c2411029c5e570c251f702ca4150);
+        
+    
+            var circle_marker_67ca2cc356ec32f3ee30c41ebc250d17 = L.circleMarker(
+                [46.69306073253944, 7.533848508769114],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ea35c2411029c5e570c251f702ca4150);
+        
+    
+            var poly_line_70d6f47d9be44a8e17308807f0505d42 = L.polyline(
+                [[46.68622089209764, 7.542535282874599], [46.68875981441601, 7.554847099230939]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_ea35c2411029c5e570c251f702ca4150);
+        
+    
+            poly_line_70d6f47d9be44a8e17308807f0505d42.bindTooltip(
+                `<div>
+                     Sesselbahn Chrindi - Laseberg
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_bbbffd6b9efab70ad21ee2884bf8918b = L.circleMarker(
+                [46.68622089209764, 7.542535282874599],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ea35c2411029c5e570c251f702ca4150);
+        
+    
+            var circle_marker_5378def67db87f7d9471737c9e81bbe5 = L.circleMarker(
+                [46.68875981441601, 7.554847099230939],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ea35c2411029c5e570c251f702ca4150);
+        
+    
+            var poly_line_433a72df8023e186c552ac4024de4119 = L.polyline(
+                [[46.687401927920575, 7.523378433928951], [46.68896439876536, 7.5291762578679355]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_ea35c2411029c5e570c251f702ca4150);
+        
+    
+            poly_line_433a72df8023e186c552ac4024de4119.bindTooltip(
+                `<div>
+                     Sesselbahn Oberstockesee - Oberstockenalp
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_eb063ba3af4711db42d45d9e45c3ac75 = L.circleMarker(
+                [46.687401927920575, 7.523378433928951],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ea35c2411029c5e570c251f702ca4150);
+        
+    
+            var circle_marker_8253933950dbf0612125d7839da55941 = L.circleMarker(
+                [46.68896439876536, 7.5291762578679355],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ea35c2411029c5e570c251f702ca4150);
+        
+    
+            var poly_line_28ef22f9236ae915052f39468aef6a2d = L.polyline(
+                [[46.68623285211774, 7.542483444989638], [46.688988345264335, 7.5292758304227645]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_ea35c2411029c5e570c251f702ca4150);
+        
+    
+            poly_line_28ef22f9236ae915052f39468aef6a2d.bindTooltip(
+                `<div>
+                     Gondelbahn Chrindi - Oberstockenalp
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_281a4bdbdc6105bb95eb8c4970928e46 = L.circleMarker(
+                [46.68623285211774, 7.542483444989638],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ea35c2411029c5e570c251f702ca4150);
+        
+    
+            var circle_marker_3b2263f5543ff77fcbf7f73db9dd451e = L.circleMarker(
+                [46.688988345264335, 7.5292758304227645],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ea35c2411029c5e570c251f702ca4150);
+        
+    
+            var poly_line_8e3395ead20cb51f8d0bb47195643bff = L.polyline(
+                [[46.703409209064475, 7.539950140225627], [46.70072571430907, 7.531680311630306]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_ea35c2411029c5e570c251f702ca4150);
+        
+    
+            poly_line_8e3395ead20cb51f8d0bb47195643bff.bindTooltip(
+                `<div>
+                     Sesselbahn Vorderälpital - Walalpgrat
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_26bbace53bdce93aa0917917bfe8d387 = L.circleMarker(
+                [46.703409209064475, 7.539950140225627],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ea35c2411029c5e570c251f702ca4150);
+        
+    
+            var circle_marker_5e94d5307489a1c9bd8819856e391b53 = L.circleMarker(
+                [46.70072571430907, 7.531680311630306],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ea35c2411029c5e570c251f702ca4150);
+        
+    
+            var poly_line_98bfe32042f5508756974a1283a2b9f8 = L.polyline(
+                [[46.69343427686786, 7.537718336669897], [46.693127227757564, 7.537770953039814], [46.692867926641284, 7.537764301689647], [46.6925619093669, 7.537688577323245], [46.692255983602166, 7.5375063682805745], [46.691932947684364, 7.537167533529535], [46.691618639513415, 7.536703442604751], [46.69136116491524, 7.536117311324546], [46.691274423099536, 7.5359198496384785], [46.69096905812989, 7.535067434675608], [46.69061206378408, 7.534083400857695], [46.69033263852714, 7.533124569652147], [46.69015492311649, 7.532294024738464], [46.69013230774457, 7.532188335245961], [46.68993787263997, 7.531229972370936], [46.689734493921854, 7.53036250078968], [46.68951773459227, 7.529672333861772], [46.68925691753096, 7.528964206874102], [46.68897752274109, 7.528426297641108], [46.688674312282096, 7.527916200555909], [46.68840038963355, 7.527515734963712], [46.688150897035285, 7.527370872642908]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_ea35c2411029c5e570c251f702ca4150);
+        
+    
+            poly_line_98bfe32042f5508756974a1283a2b9f8.bindTooltip(
+                `<div>
+                     Piste Stockhorn - Oberstockenalp
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_525d455e064b2297a8becda109fde32a = L.polyline(
+                [[46.6889777379458, 7.529225186946665], [46.688986904275986, 7.529074449413978], [46.68898602085133, 7.528799867934877], [46.68897752274109, 7.528426297641108], [46.688944833882736, 7.527972891356981], [46.68890794573447, 7.527527852904685], [46.688828224707585, 7.526912285031402], [46.688728114934676, 7.52638066523092], [46.68862145664826, 7.525908480079694], [46.688440987268315, 7.525218461940848], [46.6882366679136, 7.524674977911884], [46.688017462711194, 7.524196136471427], [46.68773055447993, 7.523697151219705], [46.6876199800429, 7.523547213146955], [46.68742695472458, 7.523363025976238]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_ea35c2411029c5e570c251f702ca4150);
+        
+    
+            poly_line_525d455e064b2297a8becda109fde32a.bindTooltip(
+                `<div>
+                     Piste Oberstockenalp - Oberstockesee 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_cdbd236fe3300aa264e7bf626911a6b4 = L.polyline(
+                [[46.688150897035285, 7.527370872642908], [46.688028080444994, 7.526789470522177], [46.68789348805171, 7.526208944532675], [46.68771490664068, 7.5255250937768485], [46.68758461527381, 7.524886757092697], [46.6874912775103, 7.5242484814045945], [46.68742695472458, 7.523363025976238]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_ea35c2411029c5e570c251f702ca4150);
+        
+    
+            poly_line_cdbd236fe3300aa264e7bf626911a6b4.bindTooltip(
+                `<div>
+                     Piste Oberstockenalp - Oberstockesee 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_0f28a93ba0ec11dd01e19ca8544662b0 = L.polyline(
+                [[46.6889777379458, 7.529225186946665], [46.68890483337698, 7.529162003024038], [46.68879370688953, 7.528990487231226], [46.68863404967123, 7.528685311836235], [46.688491725246806, 7.528334424483754], [46.68834710728879, 7.527963939648018], [46.68822912435093, 7.527610439794713], [46.688150897035285, 7.527370872642908], [46.68793006012228, 7.527336109985057], [46.68771945091971, 7.527427218321409], [46.68749575550149, 7.5276002937139905], [46.68733944124091, 7.527913263416244], [46.68727238698824, 7.528467302856706], [46.68720008771067, 7.5293334948172435], [46.68724776159076, 7.530127289623059], [46.68738066902094, 7.530553409843604], [46.687666872706146, 7.530899936070846], [46.68785313844053, 7.531248715411516], [46.68798767989053, 7.531708724510526], [46.68801061352555, 7.532183063808495], [46.68797848203582, 7.5327783038162055], [46.687890355039954, 7.533238764102179], [46.687633887271915, 7.533723292004072], [46.6874437097992, 7.534221218410507], [46.687271975738504, 7.534533158125329], [46.68718959331979, 7.534622699223127], [46.687155198760934, 7.534742220097079], [46.68716196613407, 7.534851848366145], [46.68721666820716, 7.535054568891476], [46.68723710855411, 7.535217369251096], [46.687184573395214, 7.5351574852243415], [46.68712287336286, 7.535120836988175], [46.68707485229619, 7.535130717354607], [46.68707928541389, 7.535296809989646], [46.687086066221354, 7.535389830101503], [46.68717960138496, 7.5356324803193395], [46.68723893641126, 7.535762132766107], [46.687236910310716, 7.535814040260201], [46.68722420607963, 7.535868222577055], [46.687096099198634, 7.536092556697132], [46.686982559214826, 7.536505108931629], [46.68698474414177, 7.536810646238028], [46.68705006719012, 7.537628855997389], [46.68716436544154, 7.538360924120043], [46.6872664230323, 7.539103631282766], [46.687387869431674, 7.540038225003344], [46.68737503612512, 7.540723878808735], [46.68732050101609, 7.54155156286942], [46.6872420116111, 7.54181786918479], [46.68710727919885, 7.542084067577875], [46.68688945923009, 7.5422897104419855], [46.68678181673872, 7.542342796119172], [46.68653233239144, 7.542409821652591], [46.68639535222698, 7.542455745335645], [46.68622455852585, 7.542510252053887], [46.68622455852585, 7.542510252053887]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_ea35c2411029c5e570c251f702ca4150);
+        
+    
+            poly_line_0f28a93ba0ec11dd01e19ca8544662b0.bindTooltip(
+                `<div>
+                     Piste Oberstockenalp - Chrindi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_d37c3965379d4cc232b0799d4b39bda8 = L.polyline(
+                [[46.693047492853744, 7.533811085604136], [46.692931431298696, 7.533954406579474], [46.69279858415274, 7.534156779936813], [46.69264458572014, 7.534531667093451], [46.69245569057031, 7.534977948397438], [46.692203842473454, 7.535435601736819], [46.69191801872344, 7.535847930287311], [46.691688344914496, 7.536047005181405], [46.69153798668792, 7.53609341925355], [46.69139669252056, 7.536076703232589], [46.69131526633173, 7.5360128262281005]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_ea35c2411029c5e570c251f702ca4150);
+        
+    
+            poly_line_d37c3965379d4cc232b0799d4b39bda8.bindTooltip(
+                `<div>
+                     Piste Traverse Strüssligrat - Stockefeld
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_c0b371dba5f58d99ad755881f2f54a83 = L.polyline(
+                [[46.68448208850834, 7.528332862488661], [46.684421397461286, 7.527806744465303], [46.68434011947384, 7.527280013649067], [46.68421968155233, 7.526775471789641], [46.68406873176605, 7.526110184922858], [46.683885381325055, 7.525528907382715], [46.68371182303984, 7.5249073348507185], [46.68340210277682, 7.52389806779639], [46.68318449356023, 7.52324621851023], [46.6830375033338, 7.522630182045197], [46.682952117682966, 7.52177327490282], [46.682909776875206, 7.520849499987563], [46.68299644637307, 7.520043983290586], [46.68319942570594, 7.519523795895813], [46.68335279663454, 7.519272751568584], [46.68360006347314, 7.519018253944979], [46.68393104801446, 7.518816493535746], [46.684348961392104, 7.5187429103108], [46.684875938570826, 7.5187335659363335], [46.68549901392886, 7.518953766528115]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_ea35c2411029c5e570c251f702ca4150);
+        
+    
+            poly_line_c0b371dba5f58d99ad755881f2f54a83.bindTooltip(
+                `<div>
+                     Piste Cheibehore - Oberstockensee 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_42daef40a8a53c92f8bd50d52337ac83 = L.polyline(
+                [[46.68448208850834, 7.528332862488661], [46.68459177060088, 7.528073698916581], [46.68472664950718, 7.527535442100599], [46.684761807339186, 7.527242943188161], [46.68478886393728, 7.526795196576495], [46.684756323940675, 7.526353324556671], [46.68469299557845, 7.525863639790093], [46.684619388725025, 7.525376924772174], [46.684595108698, 7.524873367458905], [46.684659280896426, 7.5242405935999415], [46.68474805050785, 7.523685473279424], [46.68474448264222, 7.522948107476102], [46.68465031931517, 7.522455394039262], [46.684603363298415, 7.522034400557037], [46.68461615075584, 7.521398560017176], [46.684733725394494, 7.5207718321781], [46.684875923026816, 7.5201899179724885], [46.68501603553807, 7.51964680629031], [46.685168380750376, 7.519238047726311], [46.685384308167976, 7.518996557178011], [46.68549901392886, 7.518953766528115]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_ea35c2411029c5e570c251f702ca4150);
+        
+    
+            poly_line_42daef40a8a53c92f8bd50d52337ac83.bindTooltip(
+                `<div>
+                     Piste Cheibehore - Oberstockensee 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_c545f17fb4e3dffeb3305a23cce8ca42 = L.polyline(
+                [[46.68046933364051, 7.51466288581231], [46.68050394216184, 7.515022498633279], [46.68065303148135, 7.515650715528135], [46.68098762893009, 7.516310600303468], [46.68137990649003, 7.51690777454249], [46.68167260890627, 7.517382548263104], [46.68191415300886, 7.517773610071688], [46.68219274471792, 7.518110961266017], [46.68249356727541, 7.518412502758582], [46.682658788205444, 7.518556127316186], [46.68306086296673, 7.518732361313587], [46.68345067240564, 7.518804625790951], [46.68393104801446, 7.518816493535746]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_ea35c2411029c5e570c251f702ca4150);
+        
+    
+            poly_line_c545f17fb4e3dffeb3305a23cce8ca42.bindTooltip(
+                `<div>
+                     Piste Solhore - Oberstockesee 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_fa37cabfcb419bdae85054412793bede = L.polyline(
+                [[46.68046933364051, 7.51466288581231], [46.68074769208717, 7.514602464186594], [46.681060991130536, 7.514647091046832], [46.68138338696222, 7.514735922608752], [46.68165105562788, 7.514780487174932], [46.681882289930186, 7.514718940817923], [46.68207103197737, 7.5145115008969645], [46.682244673445325, 7.514136108301659], [46.68234831276271, 7.513813647605984], [46.68252491956993, 7.513553155352923], [46.6827531656291, 7.513407632518737], [46.68311820493234, 7.513412551181663], [46.683477094532975, 7.513519105971066], [46.683863238226415, 7.513815732249428], [46.68415499492706, 7.514240393763124], [46.684428319809, 7.514934617599501], [46.68457086608992, 7.515580051073021], [46.68464045081452, 7.516150253867896], [46.684731194960804, 7.516914943076428], [46.68481604338395, 7.517396782669443], [46.684955682579805, 7.517825669809875], [46.68513789934771, 7.51826788076609], [46.68549901392886, 7.518953766528115]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_ea35c2411029c5e570c251f702ca4150);
+        
+    
+            poly_line_fa37cabfcb419bdae85054412793bede.bindTooltip(
+                `<div>
+                     Piste Solhore - Oberstockesee 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_31e708b9ccccbac55963c27113e8c70b = L.polyline(
+                [[46.68448208850834, 7.528332862488661], [46.68463314580737, 7.528396417432992], [46.68481401227532, 7.528554009938691], [46.68495442407127, 7.528781967166756], [46.68504958988597, 7.529007503144216], [46.68508012371568, 7.529223541587501], [46.685068665743536, 7.52940899048382], [46.6850119899435, 7.529556800556401], [46.68493272735319, 7.529657619009292], [46.68480175535511, 7.52975600311546], [46.68467731043632, 7.529774576471283], [46.68456095461985, 7.529781425000461], [46.6844639495889, 7.529839954440139], [46.6844218596862, 7.529933790689176], [46.68439904974763, 7.530168519429705], [46.684431144766705, 7.530450292959447], [46.68456139590419, 7.531548741477837], [46.68472823242826, 7.532648878698068], [46.684918698238455, 7.533356767639796], [46.68504749810711, 7.5337909109582615], [46.68532146873045, 7.534381679208811], [46.68562510054889, 7.5348943213647885], [46.685936654058246, 7.535582899439492], [46.68620766249268, 7.536482513616259], [46.68659177058434, 7.537272881023413], [46.686908758954516, 7.537883308379033], [46.687057057497825, 7.538230107732529], [46.68720914176014, 7.538686771655351]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_ea35c2411029c5e570c251f702ca4150);
+        
+    
+            poly_line_31e708b9ccccbac55963c27113e8c70b.bindTooltip(
+                `<div>
+                     Piste Cheibehore - Chrindi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_15145eb7c909957fa9bafddcf1587068 = L.polyline(
+                [[46.68655243574567, 7.5645922599546385], [46.68876464082581, 7.554925186296084]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_ea35c2411029c5e570c251f702ca4150);
+        
+    
+            poly_line_15145eb7c909957fa9bafddcf1587068.bindTooltip(
+                `<div>
+                     Gondelbahn Steinigs Nacki - Laseberg
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1b4b5233feb39b4b7f286e065824f1f5 = L.circleMarker(
+                [46.68655243574567, 7.5645922599546385],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ea35c2411029c5e570c251f702ca4150);
+        
+    
+            var circle_marker_666b231b46140d367550f6769cec07db = L.circleMarker(
+                [46.68876464082581, 7.554925186296084],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ea35c2411029c5e570c251f702ca4150);
+        
+    
+            var poly_line_443fbd48624a85b86ad120745a97eac7 = L.polyline(
+                [[46.68876326577341, 7.554885528149688], [46.68908327763889, 7.554960809671981], [46.68949466957581, 7.554929257621203], [46.689797777379496, 7.55476311197419], [46.6900148892294, 7.554494851495939], [46.690187561739066, 7.554022634135788], [46.69025513058575, 7.553420462008821], [46.690203099464064, 7.552594813556626], [46.690124063841125, 7.552091633144898], [46.6900404411849, 7.551493279957593], [46.68995226941583, 7.550758969693609], [46.689784710891665, 7.549868158328767], [46.68964025697072, 7.549269688135142], [46.689392776167324, 7.548772974487922], [46.689219947112676, 7.548487134574079], [46.688951467168756, 7.5482157384103745], [46.6887011390798, 7.547962694294699], [46.68833212263247, 7.547350198400657], [46.68799119908331, 7.5467105790014966], [46.68767384822299, 7.545873894424417], [46.687496541835195, 7.545363757816394], [46.68724917596863, 7.544724342105685], [46.68695971287272, 7.544071256300461], [46.68670761163915, 7.543486220656451], [46.68638076946221, 7.542771903400675], [46.68622455852585, 7.542510252053887]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_ea35c2411029c5e570c251f702ca4150);
+        
+    
+            poly_line_443fbd48624a85b86ad120745a97eac7.bindTooltip(
+                `<div>
+                     Piste Laseberg - Chrindi 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_62c3c9420490025acc4ced2fb3824d84 = L.polyline(
+                [[46.68876326577341, 7.554885528149688], [46.688858506305, 7.554519639463905], [46.68891697668222, 7.5538537256861185], [46.68895767162148, 7.552935979510186], [46.68897295730067, 7.551791372140695], [46.68902144766383, 7.550448062986821], [46.689089340193014, 7.549486632669593], [46.68910113180023, 7.548965829383636], [46.689047985489935, 7.548461298765724], [46.688951467168756, 7.5482157384103745]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_ea35c2411029c5e570c251f702ca4150);
+        
+    
+            poly_line_62c3c9420490025acc4ced2fb3824d84.bindTooltip(
+                `<div>
+                     Piste Laseberg - Oberbärgli
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_ae3a3eaca6e3c9daa58de23c2ec122de = L.polyline(
+                [[46.68799119908331, 7.5467105790014966], [46.687712061478415, 7.546371485719783], [46.68728587652032, 7.54601313762239], [46.68650690298331, 7.54574943491192], [46.68609694902473, 7.5455758383892775], [46.685826300917725, 7.5455455151797715], [46.68563767026401, 7.54552131237583], [46.685486027410256, 7.545413766472995], [46.68531400579247, 7.545169143200507], [46.685117514481746, 7.544775519137746], [46.684949746102134, 7.5443640792233575], [46.684646943410144, 7.543618726511288], [46.68448338073151, 7.543088140053884], [46.684409894309105, 7.542793173185237]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_ea35c2411029c5e570c251f702ca4150);
+        
+    
+            poly_line_ae3a3eaca6e3c9daa58de23c2ec122de.bindTooltip(
+                `<div>
+                     Piste Oberbärgli - Chrindi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_249a5f2dd2710e9244228df9b9785a9f = L.polyline(
+                [[46.68380356809919, 7.542413816341386], [46.68378803127359, 7.542478314141068], [46.68378462663889, 7.5425223036917775], [46.6837973716912, 7.542568279311645], [46.6838296359863, 7.542611359230497], [46.68387134153114, 7.542632948093533], [46.68395950668935, 7.542628228064849], [46.68410895399911, 7.542578651077798], [46.68420252513176, 7.542549498805213], [46.68427692742384, 7.542548001308678], [46.68431526624065, 7.542571539224112], [46.684349544154095, 7.542620489695568], [46.68438445698999, 7.542711482382248], [46.684409894309105, 7.542793173185237], [46.68448657585254, 7.542904284719429], [46.684574635468614, 7.5430159115128435], [46.68462451559205, 7.543055545048474], [46.68469650038327, 7.543065937282044], [46.68482002343722, 7.543062072536351], [46.684916002535005, 7.543076612512453], [46.68500209544929, 7.5430962607350756], [46.68504654843099, 7.543111727349365], [46.68509878599044, 7.5431046496154375], [46.68515755919966, 7.543060669026774], [46.68522393931977, 7.5430249063160515], [46.68529099727916, 7.543019907779939], [46.68535168984911, 7.54302925295335], [46.68538131027477, 7.543055970969458], [46.68541093348885, 7.543079612717071], [46.685441277427536, 7.54308684894213], [46.685465289449176, 7.54307151347592], [46.68548015459338, 7.543024372143793], [46.685519905977415, 7.542898590945426], [46.68563512452543, 7.542712182226186], [46.68571000968106, 7.5426374684400725], [46.68577215192219, 7.5426047731590105], [46.68582651897315, 7.542584368099064], [46.6858780886686, 7.542535245444297], [46.685927527893995, 7.542500474879224], [46.68598048975009, 7.542472888971663], [46.686060969525485, 7.5424556098290925], [46.68615059630674, 7.542470137031111], [46.68622455852585, 7.542510252053887]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_ea35c2411029c5e570c251f702ca4150);
+        
+    
+            poly_line_249a5f2dd2710e9244228df9b9785a9f.bindTooltip(
+                `<div>
+                     Piste Traverse Chrindi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_7b67d2f62325d7219d9bd8bd43129343 = L.polyline(
+                [[46.68876326577341, 7.554885528149688], [46.688631961616224, 7.554727187082378], [46.6884498455451, 7.554330076565276], [46.68829931155417, 7.553966443781474], [46.6881088595887, 7.553442737021185], [46.687793928131406, 7.5526548505379845], [46.687521410671664, 7.552115004181975], [46.68735522213947, 7.55191010543935], [46.68720595201587, 7.551854008244676], [46.68704807017307, 7.551878473641127], [46.686919942869615, 7.552014574092097], [46.686825879286296, 7.552218928164943], [46.686765824106864, 7.552547321731433], [46.68668411468452, 7.55319798974295], [46.686628298027046, 7.553551184577646], [46.68651252658163, 7.554127395449124], [46.68638412171936, 7.554536219693889], [46.686229852841606, 7.555205319945436], [46.6861438172704, 7.555899356984176], [46.686040335985396, 7.556959060551513], [46.68596604467836, 7.558233211159455], [46.68593514252869, 7.5592248842352125], [46.686019471166446, 7.560173425642505], [46.68619780525666, 7.560979618201774], [46.686478634138346, 7.561686872996084], [46.68659735443585, 7.562375171228987], [46.68663495496777, 7.563112873338959], [46.68657739665542, 7.5638405893490805], [46.686539362264, 7.564302526158416], [46.68655243574567, 7.5645922599546385]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_ea35c2411029c5e570c251f702ca4150);
+        
+    
+            poly_line_7b67d2f62325d7219d9bd8bd43129343.bindTooltip(
+                `<div>
+                     Piste Laseberg - Steinigs Nacki
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e0df4eefa6fd9a944ed660aa4287c8bf = L.polyline(
+                [[46.687521410671664, 7.552115004181975], [46.687367433448365, 7.551738838052977], [46.68727380857579, 7.551389752152827], [46.68721582988584, 7.550998647960734], [46.68717105296597, 7.550367328918122], [46.68716823575232, 7.549929233371803], [46.687181546776564, 7.549575962229987], [46.68717873104993, 7.549133155730209], [46.687162944358825, 7.548690322854387], [46.68709218000416, 7.5480966394705655], [46.68698247371625, 7.547535853736166], [46.686872622338484, 7.547125810391458], [46.686720769603454, 7.546555524368124], [46.68656891854457, 7.5459805310867365], [46.68650690298331, 7.54574943491192], [46.68641390967581, 7.545311323252102], [46.6863107437106, 7.54467519456962], [46.686227141843496, 7.543915082530102], [46.68616303018177, 7.543109453243279], [46.68615999831695, 7.542747533436989], [46.686174448076905, 7.542610198519735], [46.68622455852585, 7.542510252053887]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_ea35c2411029c5e570c251f702ca4150);
+        
+    
+            poly_line_e0df4eefa6fd9a944ed660aa4287c8bf.bindTooltip(
+                `<div>
+                     Piste Laseberg - Chrindi 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_cc6df5783458d71709fa699be4c9aacc = L.polyline(
+                [[46.693047492853744, 7.533811085604136], [46.693096199965524, 7.533928970144725], [46.69319530344513, 7.534128562213288], [46.69332308435694, 7.5342923874306225], [46.69348286405113, 7.5345027877912205], [46.69360066383026, 7.534651108198162], [46.69369718848621, 7.534746148338091], [46.69380461799707, 7.5348404179962145], [46.69386185009457, 7.53491699612475], [46.69391971027591, 7.535039074693977], [46.69398432906137, 7.535145962301711], [46.69407802069703, 7.5352271341854165], [46.69422239724142, 7.535303486751884], [46.69434566086297, 7.535374892781514], [46.694484154195244, 7.535391902656619], [46.69459213279905, 7.5353340097616925], [46.694681476369745, 7.535252849684412], [46.69518396608226, 7.534836228585476], [46.695355626289846, 7.534710680115404], [46.695676091533045, 7.534543937894179], [46.69605595736198, 7.534409071995276], [46.69637416828873, 7.534307979572766], [46.69666076107557, 7.534172946905482], [46.69687580185756, 7.533955497444439], [46.697146082409844, 7.533784793245858], [46.697408215689684, 7.53381064742855], [46.697550474022485, 7.533876201376178], [46.69763533503903, 7.533909002193762], [46.697867537835045, 7.533898524246253], [46.697994842964455, 7.5339313995323005], [46.69808968173703, 7.533975102813069], [46.69816457095955, 7.53398974654997], [46.69822700369157, 7.533971715094574], [46.698321872533356, 7.533979137468431], [46.69839421689374, 7.534051826608067], [46.69845150864043, 7.534211564633793], [46.69847879460915, 7.534425672106833], [46.698508673509934, 7.5345236842435765], [46.698568521879835, 7.534610864848526], [46.69862342209757, 7.534643614938466], [46.698663330213165, 7.534690851184114], [46.69869572068665, 7.534770727650779], [46.69874557600851, 7.534865147302803], [46.69881791974929, 7.534937838201605], [46.69888775778416, 7.5350214093722645], [46.698962561724194, 7.535137642829529], [46.69901733091557, 7.535326404747055], [46.69906958166126, 7.535540559446118], [46.69913430645944, 7.535765621660382], [46.6992039719057, 7.536052371999536], [46.699281163733744, 7.536295598223901], [46.69938824448214, 7.536622327655927], [46.69950523995542, 7.537032524951449], [46.699554925519784, 7.537322871115324], [46.69958205549534, 7.537711138077375], [46.69959667885531, 7.538124780313529], [46.69963628984212, 7.538513071175251], [46.69969843937443, 7.538821583566009], [46.69980055122885, 7.539112028567261], [46.699920155162744, 7.539384366938882], [46.700010637744455, 7.5395617203211955], [46.70005509376973, 7.539725635576804], [46.700161304254934, 7.539862790795935], [46.70032948419922, 7.539919958058853], [46.70056423121173, 7.539911866497078], [46.70089678637444, 7.539903956783675], [46.70126448742963, 7.539970024863043], [46.70159497107532, 7.540092880214874], [46.7019685831029, 7.540110633147244], [46.70218770083001, 7.540079770516684], [46.702420957409316, 7.540035795325137]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_ea35c2411029c5e570c251f702ca4150);
+        
+    
+            poly_line_cc6df5783458d71709fa699be4c9aacc.bindTooltip(
+                `<div>
+                     Piste Strüssligrat - Bachalp
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_477bacb058e2605b80ad4a05bba061ef = L.polyline(
+                [[46.69343427686786, 7.537718336669897], [46.69329572948696, 7.537619222802461], [46.693149277910955, 7.537438291595114], [46.693043678751025, 7.537227774255794], [46.69297149260651, 7.537006531752147], [46.692921662702936, 7.536682864109191], [46.692879389998154, 7.536200118228269], [46.692853851459375, 7.535676955635507], [46.69284689314651, 7.535124165263247], [46.69289007872808, 7.534522926771616], [46.69294798012776, 7.534075412815926], [46.69297763642129, 7.5339544308365145], [46.693047492853744, 7.533811085604136]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_ea35c2411029c5e570c251f702ca4150);
+        
+    
+            poly_line_477bacb058e2605b80ad4a05bba061ef.bindTooltip(
+                `<div>
+                     Piste Traverse Stockhorn - Strüssligrat
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_f5245eed7ffe060e4c6ea734f8f4b229 = L.polyline(
+                [[46.69589202893523, 7.527655613774063], [46.70067156502384, 7.531631012649279]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_ea35c2411029c5e570c251f702ca4150);
+        
+    
+            poly_line_f5245eed7ffe060e4c6ea734f8f4b229.bindTooltip(
+                `<div>
+                     Sesselbahn Oberi Walalp - Walalpgrat
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_35b1cd0a96a7ac93232ee2e4eac9b8b3 = L.circleMarker(
+                [46.69589202893523, 7.527655613774063],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ea35c2411029c5e570c251f702ca4150);
+        
+    
+            var circle_marker_a499277aa94d1f29fd6adab1c8ca5efd = L.circleMarker(
+                [46.70067156502384, 7.531631012649279],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ea35c2411029c5e570c251f702ca4150);
+        
+    
+            var poly_line_8a451c79a1875809e3d31c26227a0eda = L.polyline(
+                [[46.69584119249699, 7.527664984532027], [46.693044193220516, 7.533771365833839]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_ea35c2411029c5e570c251f702ca4150);
+        
+    
+            poly_line_8a451c79a1875809e3d31c26227a0eda.bindTooltip(
+                `<div>
+                     Sesselbahn Oberi Walalp - Strüssligrat
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_fd7ddc5c7e5d8c65f1f3e97c4637e8e5 = L.circleMarker(
+                [46.69584119249699, 7.527664984532027],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ea35c2411029c5e570c251f702ca4150);
+        
+    
+            var circle_marker_4f67738414433a6a0cd5cedc9ec04eae = L.circleMarker(
+                [46.693044193220516, 7.533771365833839],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ea35c2411029c5e570c251f702ca4150);
+        
+    
+            var poly_line_9250d468c591d49088014b0b4bb9a983 = L.polyline(
+                [[46.70070008598818, 7.531652790896551], [46.700509809767425, 7.531970109256698], [46.700365885144976, 7.532373305693289], [46.700308151417666, 7.532734912966606], [46.70025324487101, 7.53353706523346], [46.70023671802151, 7.534227989021118], [46.7001530935682, 7.535016175712415], [46.70001192290664, 7.535924825774968], [46.69992197577722, 7.53662952505542], [46.699924608022336, 7.537283380649687], [46.699898581352, 7.537862987438502], [46.69999016843885, 7.53896218110302], [46.70005509376973, 7.539725635576804], [46.700088393071724, 7.540030122741009], [46.70012610849922, 7.540324518948875], [46.70019104425302, 7.540725465954544], [46.700224155454976, 7.540951113861225], [46.70024205412597, 7.541051837903726], [46.700241992896125, 7.541120578583385], [46.700260597375234, 7.541176767920425], [46.70029825962564, 7.541279202123975], [46.70033220551531, 7.5413150888174645], [46.70036013541899, 7.541373232388946], [46.70038737395113, 7.541459452018244], [46.70039730250506, 7.541532084397476], [46.70041455955869, 7.54160473066519], [46.70044982395858, 7.541656111082471], [46.7004870826873, 7.541712336302048], [46.70052964606264, 7.541796648787004], [46.70056952094357, 7.5419070973814355], [46.700598720353675, 7.54203495333801], [46.700721624053706, 7.542332912655545]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_ea35c2411029c5e570c251f702ca4150);
+        
+    
+            poly_line_9250d468c591d49088014b0b4bb9a983.bindTooltip(
+                `<div>
+                     Piste Walalpgrat - Bachalp
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_317e5a33d99974446dc29d25b54e20cf = L.polyline(
+                [[46.700721624053706, 7.542332912655545], [46.70070922814832, 7.541899003000298], [46.70080817210703, 7.541428755958525], [46.70093874106851, 7.5410045872645455], [46.701185360684185, 7.540652222595048], [46.70141773724381, 7.54048902688011], [46.701621878460365, 7.540422933241332], [46.70201609478291, 7.54028049095444], [46.70227308334126, 7.540137791588358], [46.702420957409316, 7.540035795325137], [46.70262157061409, 7.539979919535235], [46.70278342892052, 7.539980220823454], [46.702917926911475, 7.53996695315934], [46.70294837405131, 7.53994999943576], [46.702973001752866, 7.539895612659522], [46.703013995039804, 7.539865070327884], [46.70305729930925, 7.539868552817105], [46.70310290856784, 7.539912864430688], [46.703156696083646, 7.539974201516267], [46.70323624287024, 7.540025380607038], [46.70331584209415, 7.540017023730469], [46.703409209064475, 7.539950140225627]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_ea35c2411029c5e570c251f702ca4150);
+        
+    
+            poly_line_317e5a33d99974446dc29d25b54e20cf.bindTooltip(
+                `<div>
+                     Piste Bachalp - Underälpital
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_c8f537d20739b4f5729f32aa96132094 = L.polyline(
+                [[46.70070008598818, 7.531652790896551], [46.70089654153393, 7.5312661671443415], [46.701117882586665, 7.5309335874531875], [46.701483814411795, 7.530741441877664], [46.7017852836592, 7.530736110135646], [46.70199835146984, 7.530695580757153], [46.70224367316998, 7.530532434149695], [46.702549394860284, 7.530235033455343], [46.70287519471738, 7.529961029986054], [46.70314865234743, 7.529797924930483], [46.70342605989256, 7.5297224483184], [46.70373552184191, 7.52977553972843], [46.70397256294475, 7.529916135440029], [46.704193493265244, 7.5300975974570745], [46.70437815464113, 7.530395833690769], [46.704522610522716, 7.530705686681039], [46.70458670301924, 7.5309803547451954], [46.70461057615019, 7.531284164379647], [46.70459815470033, 7.531733954877889], [46.70454158326705, 7.532101885129525], [46.70443267073871, 7.532574875695405], [46.704311702584185, 7.5330420009652395], [46.704162596010974, 7.53350907562116], [46.70408189168955, 7.533888642839988], [46.70398980596113, 7.534295685362347], [46.70390843203201, 7.535005818149787], [46.70387962080284, 7.535645601755502], [46.70387107141357, 7.536203240973581], [46.70383825955875, 7.536790185782345], [46.703793392869464, 7.537300797992803], [46.70372426944445, 7.537834845197226], [46.70366305339418, 7.5385626167735875], [46.70358994110918, 7.539032083713173], [46.703512865077464, 7.539413491230929], [46.703409209064475, 7.539950140225627]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_ea35c2411029c5e570c251f702ca4150);
+        
+    
+            poly_line_c8f537d20739b4f5729f32aa96132094.bindTooltip(
+                `<div>
+                     Piste Walalpgrat - Underälpital
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e92d075f9d79f653eb61f49f4197aaa5 = L.polyline(
+                [[46.70070008598818, 7.531652790896551], [46.7007163498751, 7.531286454272897], [46.70071679450116, 7.530732267567614], [46.7006777155211, 7.530267194032868], [46.70053777011556, 7.529862466933558], [46.700327677372805, 7.529473549996604], [46.700121854311824, 7.5292279658173875], [46.700005244867654, 7.5289412447263], [46.69987523259364, 7.528665326895631], [46.699630032111855, 7.528324135365722], [46.69942199736222, 7.528100849461692], [46.69920043191712, 7.527964444687338], [46.698983506610475, 7.5279003915800455], [46.69874034531459, 7.527753489418692], [46.698308735143904, 7.527561693561062], [46.698067693822786, 7.527507158340294], [46.69775001787248, 7.5273569544561845], [46.69711749125857, 7.527362294577595], [46.696854493964175, 7.527358681917375], [46.696545454478716, 7.527377287521979], [46.696262702675824, 7.527411859189419], [46.6960603999278, 7.527469592733136], [46.69594309509057, 7.527531360126166], [46.69588641289891, 7.5275990347830986], [46.69586705626491, 7.527645472000854]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_ea35c2411029c5e570c251f702ca4150);
+        
+    
+            poly_line_e92d075f9d79f653eb61f49f4197aaa5.bindTooltip(
+                `<div>
+                     Piste Walalpgrat - Oberi Walalp 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b05e563e6d7e676ea36343c7982b54a7 = L.polyline(
+                [[46.700509809767425, 7.531970109256698], [46.70034020795751, 7.532228530405145], [46.700166491261434, 7.5324759624999285], [46.69999589047989, 7.532634923517498], [46.69979487717934, 7.53275844094098], [46.69960309735831, 7.532758109652088], [46.69934438673718, 7.532709002269008], [46.69884217868331, 7.532619662232549], [46.69855904270291, 7.532658986606891], [46.69822708861738, 7.532835357364679], [46.697794634647785, 7.533064635141442], [46.6975143644626, 7.5333207145794425], [46.697279773803004, 7.533554753535266], [46.69687580185756, 7.533955497444439], [46.69668975385976, 7.533702378202944], [46.69654879820819, 7.533320895773628], [46.6964240727924, 7.532833870138028], [46.69633985617016, 7.532165096682375], [46.69628403137, 7.531320419640695], [46.69628058291513, 7.530587270143265], [46.696269182556534, 7.529695747964601], [46.696205027572965, 7.529156048197979], [46.6961006306559, 7.528457924561979], [46.69599745854189, 7.528032841758652], [46.69586705626491, 7.527645472000854]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_ea35c2411029c5e570c251f702ca4150);
+        
+    
+            poly_line_b05e563e6d7e676ea36343c7982b54a7.bindTooltip(
+                `<div>
+                     Piste Walalpgrat - Oberi Walalp 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_a379e07f70651114fa2cff622b3c27ab = L.polyline(
+                [[46.700721624053706, 7.542332912655545], [46.70080826694237, 7.542563635683256], [46.700936451996874, 7.5429405503311475], [46.70125932852478, 7.543579331947511], [46.70159735046576, 7.544050048304051], [46.70185712486987, 7.544546253489936], [46.70218811980663, 7.545186227405868], [46.702348598198384, 7.545606400469908], [46.702554890179094, 7.546184114765954], [46.702656158443254, 7.546723455689271], [46.70268196847529, 7.547205393532514], [46.70264532219054, 7.547768317058597], [46.702638433940145, 7.548107054769818], [46.70269377644381, 7.548598595686223], [46.702778682209555, 7.549071112652573], [46.702909594487146, 7.549496013110308], [46.70303409596642, 7.549758682508992], [46.70318493516215, 7.549945067315379], [46.703257782096756, 7.550035587130731], [46.7032958412172, 7.5501366697793575], [46.70329982566016, 7.5502436241351685], [46.70326552774617, 7.550479231448569], [46.7032654371289, 7.550572314009401], [46.70327899329372, 7.5506456199913226], [46.70333337974941, 7.550772482945014], [46.70334967669117, 7.550829950726468], [46.70331419294207, 7.550883350646466], [46.70330185460793, 7.550958583575639], [46.70332212737576, 7.551130927741911], [46.70332615747336, 7.551190350674378], [46.70331244457154, 7.5512774636532685], [46.70329188092386, 7.551402191659919], [46.70324402511608, 7.551564491999783], [46.703252113990246, 7.551653630650294], [46.70328204583749, 7.551703204724905], [46.70335419182507, 7.551784554646281], [46.703366405923774, 7.551836072941429], [46.70334033011792, 7.552022184591487], [46.70330879121968, 7.5522201672765465], [46.70325551461888, 7.552350767993017], [46.70319679069157, 7.552477396020285], [46.70310130979221, 7.552566317609885], [46.70283924140043, 7.552819342659001], [46.7025714358625, 7.552968980323428], [46.70236719702901, 7.553153411454079], [46.7022582755638, 7.553422769957924], [46.70222347024062, 7.553777011544972], [46.70224156823696, 7.554227646539061], [46.70230726841579, 7.554774665361322], [46.70235492341476, 7.5549079234361844], [46.7024066392633, 7.555080401713705], [46.702441092702124, 7.555218728771617], [46.70248422703356, 7.555324756130718], [46.70256322336486, 7.555398540946536], [46.70264474891964, 7.555414875752189], [46.70272754100209, 7.5554006895448484], [46.70281654511744, 7.555352401863804], [46.7029130132072, 7.555253855381899], [46.702986017891014, 7.555144485432385], [46.70307144101771, 7.554972298635335], [46.70314440912389, 7.554898838359053], [46.70323354611448, 7.554863997229413], [46.703324946546886, 7.554889329960963], [46.703426187192285, 7.554957776707526], [46.70354220453508, 7.555074734646236], [46.70363596472634, 7.555209600622687], [46.703905003058445, 7.5555028517346985], [46.70397779797658, 7.555599967884416], [46.704025921578264, 7.555659324633827], [46.70407038254001, 7.555675580199883], [46.70411608627058, 7.555684656425554], [46.70417541147435, 7.55566323738894], [46.704317600004494, 7.55555760522903], [46.70438440753945, 7.5554679708356955], [46.704451276966594, 7.55531728698485], [46.70447979332296, 7.5552185919108545], [46.7045379903293, 7.555091231475871], [46.70462337335209, 7.554958541899231], [46.7046929541069, 7.554920058825154], [46.704835080272595, 7.554875473215043], [46.704999468705694, 7.554807592477067], [46.70513168908017, 7.554784532287372], [46.70523675790336, 7.554732684641722], [46.705355682954725, 7.554592590886369], [46.70541450098733, 7.554486057216771], [46.705463514777676, 7.554398464180769], [46.70554353126474, 7.554294345515899], [46.705868469824765, 7.553896839971539], [46.70595714028719, 7.5538093613411466], [46.70601646574144, 7.55374193906408], [46.706050220559106, 7.553682906110725], [46.70607817249287, 7.55361710590162], [46.70608520818421, 7.553552950152833], [46.70608529933953, 7.553461760557479], [46.70609812429276, 7.55341788139175], [46.70613065963587, 7.553416261404239], [46.70615154375061, 7.553446702209837], [46.7061712187534, 7.553524423835198], [46.70616993355079, 7.553647696448885], [46.706147745482745, 7.553759103898511], [46.706089522693, 7.55388563310227], [46.70603592193004, 7.554037502390811], [46.70600783903068, 7.554233331637272], [46.7059691367307, 7.554589564321952], [46.705950358474986, 7.554775280711237], [46.70594548530146, 7.554998178225054], [46.70590217193889, 7.555316021363503], [46.70587766356314, 7.555422356497832], [46.70588106519036, 7.55550510971071], [46.705874021549214, 7.555576019764003], [46.70585186599801, 7.555653651882949], [46.705828569155, 7.555711017395092], [46.70565644696825, 7.55586600589611], [46.70552502441513, 7.555988996261039], [46.70545987600668, 7.556068223631375], [46.70542608712418, 7.556159339331539], [46.70539577879301, 7.556255528497096], [46.705377125886294, 7.556316280588861], [46.705344535088166, 7.556371936410151], [46.705286356110236, 7.556452866789137], [46.705245604107056, 7.556535523554513], [46.705216453830275, 7.556635091963652], [46.705175627087364, 7.55679036108931], [46.705141855101644, 7.556864589186265], [46.70508951313419, 7.556918512835928], [46.705027863660995, 7.556984236779753], [46.70498360466487, 7.557087149294761], [46.70490085880298, 7.557295015084771], [46.704862459681806, 7.557348968381829], [46.7047892100336, 7.557396090858331], [46.70470434468059, 7.557439810592438], [46.70458000556706, 7.557453048055744], [46.70445103437423, 7.557451077587829], [46.70433714376332, 7.557472781097833], [46.7042801922934, 7.557489543051691], [46.70415681409943, 7.557568952660743], [46.704054523357335, 7.557609256147389], [46.70393601479157, 7.557602242446225], [46.70372688706574, 7.557584898430172], [46.703653688170824, 7.5575830496983265], [46.70357639854022, 7.557606521280325], [46.70352172541285, 7.557667191855838], [46.70345771319908, 7.557770057374703], [46.703413665893464, 7.5578306288794295], [46.70331023594526, 7.557848976826182], [46.70316987073275, 7.557871944581458], [46.703046696944845, 7.557881806100974], [46.7029351563573, 7.557878184334333], [46.70285493319582, 7.557926977665458], [46.70274562170873, 7.55801454485864], [46.70262934213854, 7.55809871914515], [46.70261768256201, 7.558137531152039], [46.70262345354707, 7.558174692778854], [46.70265248563239, 7.558189953991873], [46.702753593573206, 7.5581699131236775], [46.7028617345107, 7.558090786727546], [46.70293149343092, 7.558048725029999], [46.70296983322162, 7.558052186502372], [46.703040652244596, 7.558108066039374], [46.703149840845754, 7.558138700884155], [46.70323463802359, 7.558160839098429], [46.703290364353485, 7.558204865578569], [46.7033867244273, 7.55828106529555], [46.703448276133486, 7.55830990710731], [46.70351800703774, 7.5582948629836855], [46.70355754740075, 7.558261177726007], [46.703584297895766, 7.558235907325249], [46.70365168909309, 7.55823605558149], [46.70369927323018, 7.558288507480834], [46.703837365393575, 7.558457674417211], [46.703979017105446, 7.558555927511009], [46.704037072395224, 7.558594894084553], [46.70418454950586, 7.558677962957513], [46.70424380024882, 7.558684848335712], [46.70435417358833, 7.558693535372584], [46.70446801676669, 7.558717427859572], [46.70462132274046, 7.558781935317558], [46.70474554897926, 7.5588767747751655], [46.704825623976845, 7.558969828177192], [46.70487550327662, 7.559049305717547], [46.704925393148294, 7.55911865155482], [46.704984608405276, 7.559159310614235], [46.705072892832, 7.559179770431789], [46.70517745294393, 7.559191823123091], [46.70530178703148, 7.559183655412648], [46.70540174381408, 7.559153480906932], [46.70553658999507, 7.559092987237713], [46.70562378692919, 7.559042519877231], [46.70572029860368, 7.558973497439085], [46.70579707178961, 7.558890921469198], [46.705864546031414, 7.55881170228966], [46.70597565350319, 7.55866000808069], [46.70604783169306, 7.558526760296529], [46.70610607200682, 7.558388415195168], [46.7061410403881, 7.558282104112741], [46.70620040012379, 7.558184289838918], [46.706242287130046, 7.558128654800321], [46.70631903161154, 7.558073096118891], [46.706394591336995, 7.558039487923192], [46.70646205447036, 7.557970398870247], [46.706574941069626, 7.5577967088637585], [46.70667500249742, 7.5576652080326605], [46.70674711478923, 7.557594439855425], [46.70684709213672, 7.557543996894636], [46.70698656937061, 7.557498706305545], [46.707085910738364, 7.557469377618068], [46.70722773795327, 7.557398760657862], [46.70738930549572, 7.557340007738472], [46.70756481082057, 7.557286350999816], [46.70767334076463, 7.557274766489296], [46.707734946808245, 7.557251258429779], [46.70777218567816, 7.557195610947811], [46.70781759624855, 7.557102828404488], [46.707911895969026, 7.556924025698656], [46.7079911095676, 7.556726613135837], [46.708080802657285, 7.556507268856633], [46.70814834453188, 7.556360492821653], [46.70821232950804, 7.556282948062162], [46.70826235247017, 7.5562239494777454], [46.70829376742911, 7.556181798253887], [46.70831241680511, 7.556124420279367], [46.708312513468485, 7.556029849612394], [46.70831027583616, 7.555945406139691], [46.70832781317058, 7.5558390514183476], [46.70836162071931, 7.5557293542096], [46.7084757327567, 7.555489794110401], [46.70854560736281, 7.55533288797469], [46.70863641858573, 7.555154072429845], [46.708715535002646, 7.5550495373928745], [46.708910933711294, 7.554855745110159], [46.70897258188463, 7.554790014140055], [46.70904123565976, 7.554690521840932], [46.70908319423039, 7.554562263010984], [46.70911354709703, 7.554420468960092], [46.709135757853794, 7.5542871016213855], [46.70916373731464, 7.554194277243404], [46.709206797851564, 7.554125128077966], [46.709259148581744, 7.554061064795926], [46.70929236242816, 7.5540025661896095], [46.70930871229546, 7.553919849576099], [46.70934954192547, 7.553757811210395], [46.70941713259207, 7.55355867541876], [46.709490513902765, 7.553378128179852], [46.70956156451134, 7.553204330887869], [46.70964306522298, 7.5530373102016926], [46.7097058944391, 7.55295131292664], [46.70980588145402, 7.552889037051191], [46.7099139732921, 7.552855487614589], [46.710032116711005, 7.552855735766179], [46.71013553571566, 7.552847508786042], [46.710195968802, 7.552834125275657], [46.710222682838136, 7.5528443143829245], [46.71023427179787, 7.55287473761011], [46.71023191943191, 7.552903442627183], [46.71021445204778, 7.552942249016598], [46.71017954415397, 7.552992840493122], [46.710052737078605, 7.553151323297269], [46.70995735049074, 7.553260895751495], [46.709923570658816, 7.553345265569302], [46.70990489401092, 7.553431355943542], [46.70989435741373, 7.55351070820531], [46.70988961350108, 7.5536069608763565], [46.70990230329037, 7.553698183949435], [46.70992085508804, 7.553737065949923], [46.709957978857105, 7.553794564437811], [46.71000790576211, 7.5538301356972335], [46.71007605266761, 7.553846136773729], [46.71023912673039, 7.5538216367347335], [46.710386414231664, 7.5538047477767], [46.71051922037139, 7.553805029066402], [46.71058365689258, 7.553799431870436], [46.71065954967892, 7.553753303207436], [46.710788529754204, 7.553635080269533], [46.71086880633719, 7.553568356911705], [46.711038517963296, 7.553480798888447], [46.71145353039626, 7.553271218045654], [46.7117192361302, 7.553178126403202], [46.71208663264251, 7.55308142526884], [46.7124112548401, 7.553032296131037], [46.71311185778929, 7.552999663637896], [46.71399017022292, 7.552913807309258], [46.71452322143057, 7.552832095465411], [46.71514014966791, 7.552672597358357], [46.71575376929643, 7.552469235618669], [46.715944833537236, 7.552469635610269], [46.71613583502476, 7.552533379668851], [46.71636364562018, 7.552660545388361], [46.71668862555902, 7.552826898243547], [46.716931866878, 7.552919873278507], [46.71712535390066, 7.552957631711443]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_ea35c2411029c5e570c251f702ca4150);
+        
+    
+            poly_line_a379e07f70651114fa2cff622b3c27ab.bindTooltip(
+                `<div>
+                     Piste Bachalp - Oberstocken
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_9c1e3be3a3b379eae3526dd9a543b462 = L.polyline(
+                [[46.70125932852478, 7.543579331947511], [46.70135541084701, 7.543989976248236], [46.70135123721112, 7.544388410795239], [46.70130511795076, 7.5448476374129525], [46.7012285948605, 7.545240395558774], [46.70110273626895, 7.545450437175395], [46.70077479632851, 7.545936773892578], [46.70054223543006, 7.546229609232888], [46.700355572010004, 7.546306713649267], [46.70020697766595, 7.546394960717739], [46.70003920843542, 7.5466270480529225], [46.699962866380496, 7.546820578862859], [46.69993582475219, 7.547230025041213], [46.699980818416165, 7.54768308866157], [46.70014021693078, 7.54824785598577], [46.70033013953409, 7.548746282843298], [46.7005731855523, 7.54943850573788], [46.700793535134736, 7.549970206377923], [46.70088405184604, 7.55011835357298], [46.700951295008906, 7.550176283075439], [46.7010460804603, 7.550223155480477], [46.70109498866911, 7.550261043046331], [46.701142302568435, 7.5503656101770575], [46.701209482887755, 7.550488000818646], [46.70125358662804, 7.550547481612684], [46.70127789509432, 7.5506361603819965], [46.70129605979571, 7.550770913425387], [46.70135324727173, 7.55091461006202], [46.70141162310788, 7.551090215980264], [46.70145165390717, 7.55131541650097], [46.70149542182248, 7.551460858834452], [46.7015269974542, 7.551600958316899], [46.701563390765834, 7.5518031086622965], [46.70159381954956, 7.551868757333076], [46.701679059713, 7.5520125144049395], [46.701761879338484, 7.5521367684207386], [46.70180078655575, 7.552262703630171], [46.70183840542331, 7.552457767377974], [46.7018820892726, 7.55268652360998], [46.701896590564594, 7.552823043718953], [46.70189400475634, 7.5529701638783076], [46.70187313863954, 7.5531012920011715], [46.70184617898791, 7.553227089240706], [46.70185343377759, 7.553290917800619], [46.701882650843686, 7.553347702791052], [46.70195820020906, 7.553422311009929], [46.702017896471816, 7.553493340990521], [46.702053143016904, 7.553619270039747], [46.70210896146165, 7.5539083222950705], [46.702159871514105, 7.554225726417805], [46.70220115348776, 7.554413710392421], [46.70224489777134, 7.554578655853336], [46.70230726841579, 7.554774665361322]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_ea35c2411029c5e570c251f702ca4150);
+        
+    
+            poly_line_9c1e3be3a3b379eae3526dd9a543b462.bindTooltip(
+                `<div>
+                     Piste Bachalp - Schneeweid
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
